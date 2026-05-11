@@ -1,4 +1,5 @@
-# 🐍 Python Rank 3 — Training Exams
+# 🐍 Python Rank 3 — Training Exam
+## 42 School
 
 This repository contains my personal practice material for the new Python Rank 3 exam model at 42 School.
 
