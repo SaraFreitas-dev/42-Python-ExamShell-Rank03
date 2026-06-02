@@ -1,7 +1,7 @@
 # 🧠 42 Common Core Rank 03 - Python ExamShell & Solutions
 
 <p align="center">
-  <img src="assets/menu.png" alt="ExamShell Preview" width="400">
+  <img src="assets/terminal_menu.png" alt="ExamShell Preview" width="400">
 </p>
 
 A Python-based **ExamShell simulator** inspired by the new 42 School Common Core Rank 03 exam, combined with a collection of organized solutions grouped by difficulty level.
