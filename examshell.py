@@ -613,7 +613,7 @@ class Session:
         return f"{s//3600:02d}:{(s%3600)//60:02d}:{s%60:02d}"
 
     def score(self):
-        return len(self.passed) * 25
+        return int((len(self.passed) / 6) * 100)
 
 # ─────────────────────────────────────────────────────────────
 # UI HELPERS
@@ -889,9 +889,10 @@ def run_exam(session):
             lvl = EXERCISES[ex]["level"]
             print(c(C.GRAY, f"    ✔ [{lvl}] ") + c(C.WHITE, ex))
     print()
-    color = C.GREEN if score >= 100 else C.RED
-    print(c(C.BOLD + color, f"  FINAL SCORE : {score} / 100"))
-    status_msg = "PASSED ✔" if score >= 100 else "FAILED ✘"
+    color = C.GREEN if len(session.passed) >= 6 else C.RED
+    print(c(C.BOLD + color,
+        f"  FINAL SCORE : {len(session.passed)} / 6 exercises ({score}%)"))
+    status_msg = "PASSED ✔" if len(session.passed) >= 6 else "FAILED ✘"
     print(c(C.BOLD + color, f"  STATUS      : {status_msg}"))
     divider("═", C.CYAN)
     print()
@@ -909,8 +910,7 @@ def main_menu():
     print(c(C.YELLOW, "  RULES:"))
     print(c(C.GRAY,   "   • You have 3 hours total."))
     print(c(C.GRAY,   "   • Exercises are assigned by level (1–6)."))
-    print(c(C.GRAY,   "   • Each validated exercise gives 25 points."))
-    print(c(C.GRAY,   "   • You pass with 100 points."))
+    print(c(C.GRAY,   "   • Complete 6 exercises to pass."))
     print(c(C.GRAY,   "   • Write your solution in the given file path."))
     print(c(C.GRAY,   "   • Press [Enter] to submit and grade."))
     print()

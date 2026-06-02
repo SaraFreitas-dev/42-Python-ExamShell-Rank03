@@ -14,7 +14,7 @@ Clone the repository:
 
 ```bash
 git clone https://github.com/SaraFreitas-dev/42-Python-ExamShell-Rank03
-cd RANK_03
+cd 42-Python-ExamShell-Rank03
 ```
 
 Run the ExamShell:
@@ -100,16 +100,13 @@ The simulator will:
 - Simulate a 3-hour exam session
 - Recreate the Common Core Rank 03 workflow
 
-Each validated exercise awards:
+## 🏆 Passing the Exam
+
+The simulator uses a progressive difficulty system.
+To successfully complete the exam you must validate:
 
 ```text
-25 points
-```
-
-Passing score:
-
-```text
-100 / 100
+6 / 6 exercises
 ```
 
 ---
