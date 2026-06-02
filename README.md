@@ -6,8 +6,6 @@
 
 A Python-based **ExamShell simulator** inspired by the new 42 School Common Core Rank 03 exam, combined with a collection of organized solutions grouped by difficulty level.
 
-Unlike most Rank 03 repositories that only provide solutions, this project includes a complete terminal-based exam simulator designed to reproduce the workflow, progression, and pressure of the actual exam environment.
-
 ---
 
 # 🚀 Quick Start
