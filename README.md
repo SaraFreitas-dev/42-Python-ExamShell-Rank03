@@ -1,74 +1,184 @@
-# 🐍 Python Rank 3 — Training Exam
-## 42 School
+# 🧠 42 Common Core Rank 03 - Python ExamShell & Solutions
 
-This repository contains my personal practice material for the new Python Rank 3 exam model at 42 School.
+<p align="center">
+  <img src="assets/terminal_example.png" alt="ExamShell Preview" width="600">
+</p>
 
-The folders include multiple training exams in PDF format inspired by the style and topics commonly found in the real exam.  
-These are **not official exams**, but they are designed to help practice the type of logic and exercises usually requested during the evaluation.
+A Python-based **ExamShell simulator** inspired by the new 42 School Common Core Rank 03 exam, combined with a collection of organized solutions grouped by difficulty level.
 
----
-
-# 📚 Repository Content
-
-The repository currently contains:
-
-- 📝 Training exam PDFs
-- 💡 Progressive exercise solutions
-- 🧪 Practice focused on Python logic and problem solving
-- 🔄 Continuous updates as I solve more exercises
-
-Each training set focuses on common Rank 3 concepts such as:
-
-- String manipulation
-- List operations
-- Rotations
-- Sorting logic
-- Base conversion
-- Pattern matching
-- Encoding algorithms
-- Simple algorithmic challenges
+Unlike most Rank 03 repositories that only provide solutions, this project includes a complete terminal-based exam simulator designed to reproduce the workflow, progression, and pressure of the actual exam environment.
 
 ---
 
-# 🎯 Goal
+# 🚀 Quick Start
 
-The main objective of this repository is to:
+Clone the repository:
 
-- Practice for the Python Rank 3 exam
-- Improve speed and problem-solving skills
-- Build familiarity with common exam patterns
-- Track progress over time
+```bash
+git clone https://github.com/SaraFreitas-dev/42-Python-ExamShell-Rank03
+cd RANK_03
+```
+
+Run the ExamShell:
+
+```bash
+python3 examshell.py
+```
+
+You will be presented with the main menu:
+
+```text
+[1] Start Exam
+[2] Practice Mode
+[3] List all exercises
+[q] Quit
+```
+---
+
+## 📝 Workspace
+
+When the ExamShell starts, it automatically creates an `exam_workspace` directory.
+
+All exercise files should be created inside this folder. The grader will only validate solutions placed in the generated workspace.
+
+Example:
+
+```text
+exam_workspace/
+├── py_echo_validator.py
+├── py_shadow_merge.py
+└── py_whisper_cipher.py
+```
+
+Simply create the requested file, implement your solution, and submit it through the ExamShell interface for automatic evaluation.
+
+
+---
+
+# ⭐ Main Feature: ExamShell Simulator
+
+The ExamShell is the core of this repository.
+
+It was built specifically to simulate the new Common Core Rank 03 experience and allows students to practice in conditions that are much closer to the real exam than simply reading solutions.
+
+Features include:
+
+- Random exercise assignment
+- Progressive level system
+- Automatic grading
+- Hidden test cases
+- Practice mode
+- Exam mode
+- Colored terminal interface
+- Score tracking
+- Time tracking
+- Rank progression logic
+- Pure Python implementation
+
+The workflow mirrors the real exam:
+
+1. Receive a subject
+2. Create the requested Python file
+3. Implement the solution
+4. Submit for grading
+5. Fix failing tests
+6. Progress to the next level
+
+---
+
+# 🎯 Exam Mode
+
+Select:
+
+```text
+[1] Start Exam
+```
+
+The simulator will:
+
+- Assign exercises automatically
+- Increase difficulty after each successful exercise
+- Track your score
+- Simulate a 3-hour exam session
+- Recreate the Common Core Rank 03 workflow
+
+Each validated exercise awards:
+
+```text
+25 points
+```
+
+Passing score:
+
+```text
+100 / 100
+```
+
+---
+
+# 🛠 Practice Mode
+
+Select:
+
+```text
+[2] Practice Mode
+```
+
+Practice Mode allows you to:
+
+- Choose any exercise
+- Focus on a specific level
+- Submit unlimited times
+- Train without time pressure
+
+---
+
+# 📚 Solutions
+
+Solutions are organized by level and include subjects and completed exercises.
+
+```text
+solutions/
+├── level_1
+├── level_2
+├── level_3
+├── level_4
+├── level_5
+└── level_6
+```
+
+This makes it easy to study specific difficulty ranges or review previously solved exercises.
+
+---
+
+# 📖 Topics Covered
+
+- Strings
+- Lists
+- Dictionaries
+- Matrices
+- Sorting
+- Palindromes
+- Caesar Cipher
+- Anagrams
+- Pattern Matching
+- Base Conversion
+- Array Rotation
+- Subsequence Detection
+- Algorithmic Thinking
 
 ---
 
 # ⚠️ Disclaimer
 
-These exercises are **not official 42 exam subjects**.  
-They are training resources created for educational and practice purposes only.
+This project is an independent educational tool inspired by the 42 School exam format.
+
+It is not affiliated with or endorsed by 42 School.
 
 ---
 
-# 🚧 Work in Progress
+# ⭐ Support
 
-New exercises and solutions are being added progressively over time.
+If this repository helped you prepare for the exam, consider giving it a star.
 
-Some folders may contain:
-- only the subject PDFs,
-- partial solutions,
-- or fully completed exercises.
-
----
-
-# ▶️ Usage
-
-You can:
-- read the PDF subjects,
-- attempt the exercises yourself,
-- compare with the provided solutions,
-- or use the repository as general Python algorithm practice.
-
----
-
-# 🏫 42 School
-
-Created as part of my preparation for the 42 School Python Rank 3 exam system.
+Good luck and happy coding 🚀
