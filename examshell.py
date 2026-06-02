@@ -911,7 +911,7 @@ def main_menu():
     print(c(C.GRAY,   "   • You have 3 hours total."))
     print(c(C.GRAY,   "   • Exercises are assigned by level (1–6)."))
     print(c(C.GRAY,   "   • Complete 6 exercises to pass."))
-    print(c(C.GRAY,   "   • Write your solution in the given file path."))
+    print(c(C.GRAY,   "   • Write your solution in the exam_workspace folder."))
     print(c(C.GRAY,   "   • Press [Enter] to submit and grade."))
     print()
     divider()
