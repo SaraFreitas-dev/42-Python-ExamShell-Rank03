@@ -86,6 +86,10 @@ The workflow mirrors the real exam:
 5. Fix failing tests
 6. Progress to the next level
 
+<p align="center">
+  <img src="assets/ko_grade.png" alt="ExamShell Preview" width="400">
+</p>
+
 ---
 
 # 🎯 Exam Mode

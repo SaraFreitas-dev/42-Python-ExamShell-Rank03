@@ -742,9 +742,9 @@ def print_grade_report(ex_name, results, passed, total):
             print(f"          {c(C.GRAY,'expected:')} {c(C.GREEN, repr(expected))}")
             print(f"          {c(C.GRAY,'got     :')} {c(C.RED, repr(got))}")
     divider()
-    pct = int(passed / total * 100)
+    pct = int(passed / 6 * 100)
     color = C.GREEN if pct == 100 else (C.YELLOW if pct >= 50 else C.RED)
-    print(c(C.BOLD + color, f"  {passed}/{total} tests passed  ({pct}%)"))
+    print(c(C.BOLD + color, f"  {passed}/6 tests passed  ({pct}%)"))
     divider()
 
 # ─────────────────────────────────────────────────────────────
