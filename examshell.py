@@ -97,10 +97,11 @@ Allowed functions: None
 --------------------------------------------------------------------------------
 
 Write a function that sorts a list of strings according to multiple criteria:
-
-  1. Primary sort  : By string length (shortest first)
-  2. Secondary sort: Alphabetically (for strings of same length)
-  3. Tertiary sort : By number of vowels ascending
+1. Primary sort: By string length (shortest first)
+2. Secondary sort: ASCII order, except letters are compared case-insensitively
+   (for strings of same length)
+3. Tertiary sort: By number of vowels (ascending, for same length and lexically equal)
+4. Equal strings will appear in the same order as in the input list.
 
 Your function must be declared as follows:
 
@@ -117,7 +118,7 @@ Examples:
     cryptic_sorter(["apple","cat","banana","dog","elephant"])
         -> ["cat","dog","apple","banana","elephant"]
     cryptic_sorter(["aaa","bbb","AAA","BBB"])
-        -> ["AAA","aaa","BBB","bbb"]
+        -> ["aaa", "AAA", "bbb", "BBB"]
     cryptic_sorter(["hello","world","hi","test"])
         -> ["hi","test","hello","world"]
     cryptic_sorter([])       -> []
@@ -126,7 +127,7 @@ Examples:
         "function": "cryptic_sorter",
         "tests": [
             ([["apple","cat","banana","dog","elephant"]], ["cat","dog","apple","banana","elephant"]),
-            ([["aaa","bbb","AAA","BBB"]],                  ["AAA","aaa","BBB","bbb"]),
+            ([["aaa","bbb","AAA","BBB"]],                  ["aaa", "AAA", "bbb", "BBB"]),
             ([["hello","world","hi","test"]],              ["hi","test","hello","world"]),
             ([[]], []),
             ([[""]],  [""]),
@@ -742,9 +743,9 @@ def print_grade_report(ex_name, results, passed, total):
             print(f"          {c(C.GRAY,'expected:')} {c(C.GREEN, repr(expected))}")
             print(f"          {c(C.GRAY,'got     :')} {c(C.RED, repr(got))}")
     divider()
-    pct = int(passed / 6 * 100)
+    pct = int(passed / total * 100)
     color = C.GREEN if pct == 100 else (C.YELLOW if pct >= 50 else C.RED)
-    print(c(C.BOLD + color, f"  {passed}/6 tests passed  ({pct}%)"))
+    print(c(C.BOLD + color, f"  {passed}/{total} tests passed  ({pct}%)"))
     divider()
 
 # ─────────────────────────────────────────────────────────────
