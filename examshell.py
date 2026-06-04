@@ -586,7 +586,7 @@ Examples:
             (["xyz", "abc"],                 False),
             (["aaaa", "aaa"],                False),
             (["aab", "aaab"],                True),
-            (["aba", "aabb"],                True),
+            (["aba", "aabb"],                False),
             (["abc", "ABC"],                 False),
             (["sing","subsequence testing"], True),
         ],
