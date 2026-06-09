@@ -598,7 +598,7 @@ Examples:
 # ─────────────────────────────────────────────────────────────
 class Session:
     def __init__(self):
-        self.start_time   = time.time()
+        self.start_time: float | None = None
         self.login        = os.environ.get("USER", "student")
         self.current_ex   = None
         self.current_level= None
@@ -610,6 +610,9 @@ class Session:
         self.exam_over    = False
 
     def elapsed(self):
+        if self.start_time is None:
+            return "00:00:00"
+
         s = int(time.time() - self.start_time)
         return f"{s//3600:02d}:{(s%3600)//60:02d}:{s%60:02d}"
 
@@ -791,7 +794,7 @@ def run_exam(session):
     """Main exam loop."""
     while True:
         # ── check time limit (3 hours)
-        if time.time() - session.start_time > 3 * 3600:
+        if session.start_time and time.time() - session.start_time > 3 * 3600:
             clear()
             banner()
             print(c(C.RED + C.BOLD, "\n  ⏰  TIME'S UP — Exam ended (3h limit)"))
@@ -859,13 +862,17 @@ def run_exam(session):
                 if passed_n == total_n:
                     print(c(C.GREEN + C.BOLD, "\n  🏆  PERFECT SCORE — Exercise validated!\n"))
                     session.passed.append(ex_name)
+
+                    if len(session.passed) >= 6:
+                        session.exam_over = True
                     time.sleep(1.5)
                     break
                 else:
                     remaining = total_n - passed_n
                     print(c(C.YELLOW, f"\n  Fix {remaining} failing test(s) and press [Enter] again.\n"))
                 continue
-
+            if session.exam_over:
+                break
             print(c(C.GRAY, f"  Unknown command: '{cmd}'  — try [Enter] to grade or 'subject'"))
 
         if session.exam_over:
@@ -1005,11 +1012,13 @@ def main():
     while True:
         choice = main_menu()
         if choice == "1":
+            session = Session()
             clear()
             banner()
             login = input(c(C.BOLD + C.WHITE, "\n  Enter your login: ")).strip()
             if login:
                 session.login = login
+            session.start_time = time.time()
             print(c(C.CYAN, f"\n  Starting exam for {session.login}..."))
             time.sleep(1)
             run_exam(session)
