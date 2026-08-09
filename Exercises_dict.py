@@ -78,7 +78,7 @@ Examples:
     cryptic_sorter(["apple","cat","banana","dog","elephant"])
         -> ["cat","dog","apple","banana","elephant"]
     cryptic_sorter(["aaa","bbb","AAA","BBB"])
-        -> ["AAA", "aaa", "BBB", "bbb"]
+        -> ["aaa", "AAA", "bbb", "BBB"]
     cryptic_sorter(["hello","world","hi","test"])
         -> ["hi","test","hello","world"]
     cryptic_sorter([])       -> []
@@ -87,11 +87,12 @@ Examples:
         "function": "cryptic_sorter",
         "tests": [
             ([["apple","cat","banana","dog","elephant"]], ["cat","dog","apple","banana","elephant"]),
-            ([["aaa","bbb","AAA","BBB"]],                  ["AAA", "aaa", "BBB", "bbb"]),
+            ([["aaa","bbb","AAA","BBB"]],                  ["aaa", "AAA", "bbb", "BBB"]),
             ([["hello","world","hi","test"]],              ["hi","test","hello","world"]),
             ([[]], []),
             ([[""]],  [""]),
             ([["z","a","m"]],                              ["a","m","z"]),
+			([["dog","dog","cat"]],                        ["cat","dog","dog"])
         ],
     },
 

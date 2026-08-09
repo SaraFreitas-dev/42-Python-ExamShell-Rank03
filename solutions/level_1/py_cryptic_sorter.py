@@ -11,7 +11,6 @@ def cryptic_sorter(strings: list[str]) -> list[str]:
         strings, key=lambda word:
         (len(word),
          word.lower(),
-         word,
          sum(c.lower() in 'aeiou' for c in word)
          )
     )
