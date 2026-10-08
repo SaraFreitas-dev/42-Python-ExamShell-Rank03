@@ -3,12 +3,12 @@
 </p>
 
 <h3 align="center">42 Exam Rank 03 (Python) - ExamShell Simulator & Solutions</h3>
-
+<br>
+A Python-based **ExamShell simulator** inspired by the new 42 School Common Core Rank 03 exam, combined with a collection of organized solutions grouped by difficulty level.
+<br>
 <p align="center">
   <img src="assets/terminal_menu.png" alt="ExamShell Preview" width="400">
 </p>
-
-A Python-based **ExamShell simulator** inspired by the new 42 School Common Core Rank 03 exam, combined with a collection of organized solutions grouped by difficulty level.
 
 ---
 
