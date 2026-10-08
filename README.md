@@ -1,4 +1,8 @@
-# 🧠 42 Common Core Rank 03 - Python ExamShell & Solutions
+<p align="center">
+  <img src="assets/banner_examshell_rank03.png" alt="ExamShell Banner" width="800">
+</p>
+
+<h3 align="center">42 Exam Rank 03 (Python) - ExamShell Simulator & Solutions</h3>
 
 <p align="center">
   <img src="assets/terminal_menu.png" alt="ExamShell Preview" width="400">
