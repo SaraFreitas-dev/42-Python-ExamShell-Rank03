@@ -184,6 +184,12 @@ It is not affiliated with or endorsed by 42 School.
 
 ---
 
+## 💡 Suggestions
+
+Found a missing test case or have an idea? Feel free to [open an issue](https://github.com/SaraFreitas-dev/42-Python-ExamShell-Rank04/issues).
+
+---
+
 # ⭐ Support
 
 If this repository helped you prepare for the exam, consider giving it a star.
