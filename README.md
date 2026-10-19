@@ -1,19 +1,50 @@
 <p align="center">
-  <img src="assets/banner_practice_rank03.png" alt="ExamShell Banner" width="800">
+  <img src="assets/banner_practice_rank03.png" alt="PracticeShell Banner" width="800">
 </p>
 
-> ⚠️ [!WARNING]
-> At the request of the 42 Network, this repository no longer contains the real Rank 03 exam subjects or solutions. The ExamShell now uses **original practice exercises** inspired by the exam format. They are great for training, but they are **not** the actual exam questions.
-
-
-<h3 align="center">42 Exam Rank 03 (Python) - ExamShell Simulator & Solutions</h3>
 <br>
-A Python-based **ExamShell simulator** inspired by the new 42 School Common Core Rank 03 exam, combined with a collection of organized solutions grouped by difficulty level.
-<br><br>
+
+<h1 align="center">Rank 03 (Python) PracticeShell - Exercises & Solutions</h1>
+
+<br>
+
+
+> [!WARNING]
+> At the request of the 42 Network, this repository no longer contains the real Rank 03 exam subjects or solutions. The PracticeShell now uses **original exercises**. They are great for training, but they are **not** the actual exam questions.
+
+
+---
+
+# 💡 About
+
+This repository is a **growing bank of exercises** for the topics learned during Milestone 3 of the Python Common Core.
+
+The goal is to help you:
+
+- **Train** the topics you learned during the milestone
+- **Review** your doubts and find your weak points
+- **Prepare** for the exam by practicing under time and test pressure.
+
+New exercises will be added over time. Each one focuses on a concept learned during this milestone.
+
+---
+
+<br>
+<p align="center">
+  <img src="assets/terminal_menu.png" alt="PracticeShell Preview" width="400">
+</p>
 
 <p align="center">
-  <img src="assets/terminal_menu.png" alt="ExamShell Preview" width="400">
+  <a href="#-quick-start">Quick Start</a> •
+  <a href="#-main-feature-practiceshell-simulator">Features</a> •
+  <a href="#-exam-mode">Exam Mode</a> •
+  <a href="#-practice-mode">Practice Mode</a> •
+  <a href="#-solutions">Solutions</a>
 </p>
+
+---
+
+A Python-based **PracticeShell simulator** inspired by the new 42 School Common Core Rank 03 learning material, combined with a collection of organized solutions grouped by difficulty level.
 
 ---
 
@@ -26,10 +57,10 @@ git clone https://github.com/SaraFreitas-dev/42-Python-ExamShell-Rank03
 cd 42-Python-ExamShell-Rank03
 ```
 
-Run the ExamShell:
+Run the PracticeShell:
 
 ```bash
-python3 examshell.py
+python3 practiceshell.py
 ```
 
 You will be presented with the main menu:
@@ -40,11 +71,14 @@ You will be presented with the main menu:
 [3] List all exercises
 [q] Quit
 ```
+
+No dependencies, no setup: just Python 3.
+
 ---
 
 ## 📝 Workspace
 
-When the ExamShell starts, it automatically creates an `exam_workspace` directory.
+When the PracticeShell starts, it automatically creates an `exam_workspace` directory.
 
 All exercise files should be created inside this folder. The grader will only validate solutions placed in the generated workspace.
 
@@ -52,41 +86,31 @@ Example:
 
 ```text
 exam_workspace/
-├── py_echo_validator.py
-├── py_shadow_merge.py
-└── py_whisper_cipher.py
+└── py_word_length_sorter.py
 ```
 
-Simply create the requested file, implement your solution, and submit it through the ExamShell interface for automatic evaluation.
-
+Simply create the requested file, implement your solution, and submit it through the PracticeShell interface for automatic evaluation.
 
 ---
 
-# ⭐ Main Feature: ExamShell Simulator
+# ⭐ Main Feature: PracticeShell Simulator
 
-The ExamShell is the core of this repository.
+The PracticeShell is the core of this repository.
 
-It was built specifically to simulate the new Common Core Rank 03 experience and allows students to practice in conditions that are much closer to the real exam than simply reading solutions.
+It lets you practice each milestone topic hands-on, with hidden tests and automatic feedback, instead of just reading solutions.
 
 <p align="center">
-  <img src="assets/terminal_example.png" alt="ExamShell Preview" width="400">
+  <img src="assets/terminal_example.png" alt="PracticeShell Preview" width="400">
 </p>
 
-Features include:
+| Grading | Exam experience | Interface |
+|---|---|---|
+| Automatic grading | Random exercise assignment | Colored terminal UI |
+| Hidden test cases | Progressive level system | Score tracking |
+| Timeout protection | Exam & practice modes | Time tracking |
+| 6 difficulty levels | Rank progression logic | Pure Python |
 
-- Random exercise assignment
-- Progressive level system
-- Automatic grading
-- Hidden test cases
-- Practice mode
-- Exam mode
-- Colored terminal interface
-- Score tracking
-- Time tracking
-- Rank progression logic
-- Pure Python implementation
-
-The workflow mirrors the real exam:
+The workflow:
 
 1. Receive a subject
 2. Create the requested Python file
@@ -96,7 +120,7 @@ The workflow mirrors the real exam:
 6. Progress to the next level
 
 <p align="center">
-  <img src="assets/ko_grade.png" alt="ExamShell Preview" width="400">
+  <img src="assets/ko_grade.png" alt="PracticeShell KO example" width="400">
 </p>
 
 ---
@@ -115,7 +139,6 @@ The simulator will:
 - Increase difficulty after each successful exercise
 - Track your score
 - Simulate a 3-hour exam session
-- Recreate the Common Core Rank 03 workflow
 
 ## 🏆 Passing the Exam
 
@@ -147,7 +170,7 @@ Practice Mode allows you to:
 
 # 📚 Solutions
 
-Solutions are organized by level and include subjects and completed exercises.
+Solutions are organized by level and include the completed exercises.
 
 ```text
 solutions/
@@ -161,36 +184,41 @@ solutions/
 
 This makes it easy to study specific difficulty ranges or review previously solved exercises.
 
+> ⚠️ Try each exercise in the PracticeShell first. Reading solutions before attempting them will not show you where your weak points are.
+
 ---
 
 # 📖 Topics Covered
 
-- Strings
-- Lists
-- Dictionaries
-- Matrices
-- Sorting
-- Palindromes
-- Caesar Cipher
-- Anagrams
-- Pattern Matching
-- Base Conversion
-- Array Rotation
-- Subsequence Detection
-- Algorithmic Thinking
+- Strings and string transformations
+- Lists and matrices
+- Dictionaries and character counting
+- Sorting with custom criteria
+- Palindromes and anagrams
+- Ciphers and character shifting
+- Number conversion (Roman numerals, binary)
+- Rotation and merging of lists
+- Stacks and balanced structures
+- Edge case handling
+- Algorithmic thinking
 
 ---
 
-# ⚠️ Disclaimer
+## ⚠️ Disclaimer
 
-This project is an independent educational tool inspired by the 42 School exam format.
-
-It is not affiliated with or endorsed by 42 School.
+This project is an independent educational tool.
+It is not affiliated with or endorsed by 42 School, and it does not contain any official 42 exam content.
 
 ---
 
-# ⭐ Support
+## 💡 Suggestions
 
-If this repository helped you prepare for the exam, consider giving it a star.
+Found a bug, a missing test case or have an idea? Feel free to [open an issue](https://github.com/SaraFreitas-dev/42-Python-ExamShell-Rank03/issues).
 
-Good luck and happy coding 🚀
+---
+
+## ⭐ Support
+
+<h3 align="center">If this repository helped you prepare for the exam, consider giving it a star ⭐</h3>
+
+<p align="center">Good luck and happy coding 🚀</p>
