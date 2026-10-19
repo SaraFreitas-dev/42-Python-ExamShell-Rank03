@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="assets/banner_examshell_rank03.png" alt="ExamShell Banner" width="800">
+  <img src="assets/banner_practice_rank03.png" alt="ExamShell Banner" width="800">
 </p>
 
 > ⚠️ [!WARNING]
