@@ -426,6 +426,9 @@ Examples:
             (["", ""], 0),
             (["is", "this is his list"], 4),
             (["aba", "abababa"], 2),
+            (["ab", "aab"], 1),
+            (["abc", "ababc"], 1),
+            (["aab", "aaab"], 1),
         ],
     },
 
